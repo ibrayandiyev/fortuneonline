@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#0061da">
+		<meta name="theme-color" content="#1643a3">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="../assets/images/brand/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+
+		<!-- Title -->
+		<title>Fortune Online - Tu mejor tipo de cambio online</title>
+
+		<!--Bootstrap.min css-->
+		<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+        <!--Font Awesome-->
+		<link href="../assets/plugins/fontawesome-free/css/all.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="../assets/css/empresa.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!-- Sidemenu Css -->
+		<link href="../assets/plugins/toggle-sidebar/css/sidemenu-empresa.css" rel="stylesheet">
+
+
+		<!-- Data table css -->
+		<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/plugins/Datatable/css/buttons.bootstrap4.min.css">
+		<link href="../assets/plugins/datatable/responsive.bootstrap4.min.css" rel="stylesheet" />
+
+
+		<!---Font icons-->
+		<link href="../assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+		<!-- Sidebar css -->
+		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+	</head>
+	<body class="app sidebar-mini rtl">
+
+		<!-- Global Loader-->
+		<div id="global-loader"><img src="../assets/images/loader.svg" alt="cargando"></div>
+
+		<div class="page">
+			<div class="page-main">
+
+				<!-- Navbar-->
+				<header class="app-header header">
+					<!-- Navbar Right Menu-->
+					<div class="container-fluid">
+						<div class="d-flex">
+							<a class="header-brand" href="index.html">
+								<img alt="logo" class="header-brand-img main-logo" src="../assets/images/brand/logo1.png">
+								<img alt="logo" class="header-brand-img mobile-logo" src="../assets/images/brand/icon.png">
+							</a>
+							<div class="d-none d-sm-flex">
+								<a href="#" data-toggle="search" class="icon navsearch">
+									<i class="fe fe-search"></i>
+								</a>
+							</div>
+							<!-- Sidebar toggle button-->
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<div class="header-searchinput">
+								<form class="form-inline">
+									<div class="search-element mr-3">
+										<input class="form-control header-search" type="search" placeholder="Buscar" aria-label="Buscar">
+										<span class="search-icon"><i class="fa fa-search"></i></span>
+									</div>
+								</form>
+							</div>
+
+							<div class="d-flex order-lg-2 ml-auto">
+								<div class="d-sm-flex d-none">
+									<a href="#" class="nav-link icon full-screen-link">
+										<i class="fe fe-minimize fullscreen-button"></i>
+									</a>
+								</div>
+
+
+								<button class="navbar-toggler navresponsive-toggler d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+									aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon fe fe-more-vertical text-white"></span>
+								</button>
+								<!--Navbar -->
+
+								<div class="dropdown">
+									<a class="nav-link pr-0 leading-none d-flex" data-toggle="dropdown" href="#">
+										<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/25.jpg"></span>
+										<span class="ml-2 d-none d-lg-block">
+											<span class="text-dark">Katiuska Flores</span>
+										</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item" href="perfil.html"><i class="dropdown-icon fe fe-user"></i>Datos de perfil</a>
+
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="ayuda.html"><i class="dropdown-icon fe fe-help-circle"></i>Ayuda</a>
+										<div class="dropdown-divider"></div>
+
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-power"></i> Salir</a>
+									</div>
+								</div>
+								<div class="dropdown d-md-flex header-settings">
+									<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+										<i class="fe fe-bell"></i><span class=" nav-unread badge badge-info  badge-pill">6</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="mb-1 navbar navbar-expand-lg  responsive-navbar navbar-dark d-sm-none bg-white">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+						<div class="d-flex order-lg-2 ml-auto">
+							<div class="">
+								<a href="#" data-toggle="search" class="icon navsearch">
+									<i class="fe fe-search"></i>
+								</a>
+							</div>
+							<div class="d-md-flex">
+								<a href="#" class="nav-link icon full-screen-link text-dark">
+									<i class="fe fe-minimize fullscreen-button"></i>
+								</a>
+							</div>
+
+							<div class="dropdown d-md-flex header-message">
+								<a class="nav-link icon text-dark" data-toggle="dropdown">
+									<i class="fe fe-mail"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item text-center" href="#">2 New Messages</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/41.jpg"></span>
+										<div>
+											<strong>Madeleine</strong> Hey! there I' am available....
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/1.jpg"></span>
+										<div>
+											<strong>Anthony</strong> New product Launching...
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/18.jpg"></span>
+										<div>
+											<strong>Olivia</strong> New Schedule Realease......
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center" href="#">See all Messages</a>
+								</div>
+							</div>
+							<div class="dropdown d-md-flex header-message">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fe fe-grid"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-icon.html">Icon Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu.html">Icon Closed Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay2.html">Icon Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay.html">Closed Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="horizontal.html">Horizontal Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-2.html">Light Layout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/.Navbar -->
+
+				<!-- Sidebar menu-->
+				<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar">
+					<div class="app-sidebar__user">
+						<div class="user-body">
+							<span class="avatar avatar-lg brround text-center cover-image" data-image-src="../assets/images/users/female/25.jpg"></span>
+						</div>
+						<div class="user-info">
+							<a href="#" class="ml-2"><span class="text-dark app-sidebar__user-name font-weight-semibold">Katiuska Flores</span><br>
+								<span class="text-muted app-sidebar__user-name text-sm"> cuenta personal</span>
+							</a>
+						</div>
+					</div>
+					<ul class="side-menu">
+						<li class="slide">
+							<a class="side-menu__item" href="index.html"><i class="side-menu__icon fas fa-home"></i><span class="side-menu__label">Panel Usuario</span></a>
+
+						</li>
+						<li>
+							<a class="side-menu__item  actives" href="cuentasbancarias.html"><i class="side-menu__icon fas fa-piggy-bank"></i><span class="side-menu__label">Cuentas Bancarias</span></a>
+
+
+						</li>
+						<li>
+							<a class="side-menu__item" href="operacion.html"><i class="side-menu__icon far fa-money-bill-alt"></i><span class="side-menu__label">Iniciar operación</span></a>
+						</li>
+						<li>
+							<a class="side-menu__item" href="historial.html"><i class="side-menu__icon fas fa-receipt"></i><span class="side-menu__label">Historial</span></a>
+						</li>
+						<li>
+							<a class="side-menu__item" href="ayuda.html"><i class="side-menu__icon far fa-life-ring"></i><span class="side-menu__label">Ayuda</span></a>
+						</li>
+
+					</ul>
+					
+					
+					
+					</br>
+					
+					<div class="app-sidebar__user">
+						<div class="user-body">
+								<i class="far fa-clock fa-2x"></i>
+						</div>
+						<div class="user-info">
+				
+							<a href="#" class="ml-2">
+						
+							<span class="text-dark app-sidebar__user-name font-weight-semibold">Horario de Atención</span><br>
+								<span class="text-muted app-sidebar__user-name text-sm"> Lun a Vie <br>9:00 am a 7:00 pm <br>Sáb de 11:00 am a 2:00 pm</span>
+							</a>
+						</div>
+					</div>
+					
+				</aside>
+				
+								
+				
+				<!--side-menu-->
+
+				<div class=" app-content my-3 my-md-5">
+					<div class="side-app">
+						<!--Page Header-->
+						<div class="mb-5">
+							<div class="page-header  mb-0">
+								<h4 class="page-title">Iniciar Operación</h4>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Operación</li>
+								</ol>
+							</div>
+						</div>
+
+						<!--page header-->
+
+
+
+
+
+
+						
+								<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									
+									<div class="card-body">
+										<form>
+											<div id="basicwizard" class="border pt-0">
+												<ul class="nav nav-tabs nav-justified">
+													<li class="nav-item"><a href="#tab1" data-toggle="tab" class="nav-link font-bold">Calcula</a></li>
+													<li class="nav-item"><a href="#tab2" data-toggle="tab" class="nav-link font-bold">Transfiere</a></li>
+													<li class="nav-item"><a href="#tab3" data-toggle="tab" class="nav-link font-bold">Finalizado</a></li>
+												</ul>
+												<div class="tab-content card-body  b-0 mb-0">
+													<div class="tab-pane fade" id="tab1">
+														<div class="row">
+															<div class="col-12">
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			<label class="control-label form-label" for="userName">¿Desde qué banco nos envias tu dinero?</label>
+																		</div>
+																		<div class="col-lg-6">
+																			<select class="form-control select2 custom-select" data-placeholder="Elije uno">
+												<option label="Elije uno">
+												</option>
+												<option value="1">Banco de Comercio</option>
+												<option value="2">Banco de Crédito del Perú</option>
+												<option value="3">Banco Pichincha</option>
+												<option value="4">BBVA</option>
+												<option value="5">Interbank</option>
+												<option value="5">MiBanco</option>
+												<option value="5">Scotiabank Perú</option>
+												<option value="5">Banco GNB Perú</option>
+												<option value="5">Banco Falabella</option>
+												<option value="5">Banco Ripley</option>
+											</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group  clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			<label class="control-label form-label " for="password"> ¿En qué cuenta deseas recibir tu dinero?</label>
+																		</div>
+																		<div class="col-lg-6">
+																		<select class="form-control select2 custom-select" data-placeholder="Elije uno">
+												<option label="Elije uno">
+												</option>
+												<option value="1">Banco de Comercio</option>
+												<option value="2">Banco de Crédito del Perú</option>
+												<option value="3">Banco Pichincha</option>
+												<option value="4">BBVA</option>
+												<option value="5">Interbank</option>
+												<option value="5">MiBanco</option>
+												<option value="5">Scotiabank Perú</option>
+												<option value="5">Banco GNB Perú</option>
+												<option value="5">Banco Falabella</option>
+												<option value="5">Banco Ripley</option>
+											</select>
+																		</div>
+																	</div>
+																</div>
+																
+																
+																
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			<label class="control-label form-label" for="confirm">Tu envias</label>
+																			
+																			
+																		</div>
+																		<div class="col-lg-6">
+																			<div class="custom-controls-stacked">
+														<label class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" name="example-radios" value="option1" checked>
+															<span class="custom-control-label">Soles</span>
+														</label>
+														<label class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" name="example-radios" value="option2">
+															<span class="custom-control-label">Dólares</span>
+														</label>
+														
+														<div class="col-lg-3">
+														
+														<input type="text" class="form-control" name="example-text-input" placeholder="Ingresa un monto"></br>
+																				<a href="#" class="btn btn-pill btn-info"><i class="fas fa-calculator"></i> Calcular</a>
+																			
+																			
+																		</div>
+													
+														
+													</div>
+													
+													
+													
+													
+													
+													
+																		</div>
+																	</div>
+																</div>
+																
+																
+																
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			
+																			
+																			
+																		</div>
+																		<div class="col-lg-6">
+																			<div class="card"><br>
+									<div class="dash-widget text-center"><h4>Tu recibes</h4>
+									
+										<h4 class="counter p-4 bg-gradient-success text-white br-7 text-center"> 5,6989.32</h4>
+										<p class="mb-0 text-muted">Dólares</p></div>
+									
+								</div>
+													
+													
+													
+													
+													
+													
+																		</div>
+																	</div>
+																</div>
+																
+																
+																
+																
+																<div class="card">
+									<div class="card-body">
+										<div class="dash-widget text-center">
+											<p>Tipo de cambio</p></br>
+											<h4>Compra: 3.334</h4>
+											<h4>Venta: 3.374</h4>
+											<p class="mb-0 text-muted"><i class="side-menu__icon far fa-money-bill-alt"></i>Tipo de cambio usado 3.374</p>
+										</div>
+									</div>
+								</div>
+																
+																
+																
+																
+																
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="tab2">
+														<div class="row">
+															<div class="col-12">
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																		
+																	
+																		
+																			<label class="control-label form-label" for="name"> Elije el tipo de moneda que transferiras</label>
+																		</div>
+																		<div class="col-lg-9">
+																		
+																		
+																		<label class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" name="example-radios" value="option1" checked>
+															<span class="custom-control-label">Soles</span>
+														</label>
+														<label class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" name="example-radios" value="option2">
+															<span class="custom-control-label">Dólares</span>
+														</label>
+																		
+																		
+																		
+																		
+																			<select class="form-control select2 custom-select" data-placeholder="Elije uno">
+												<option label="Elije uno">
+												</option>
+												<option value="1">Banco de Crédito del Perú</option>
+												
+												
+												<option value="2">Banco Pichincha</option>
+												
+												
+												<option value="3">BBVA</option>
+											
+												
+												<option value="4">Scotiabank Perú</option>										
+												
+											</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			<label class="control-label form-label" for="surname"> Nuestro numero de cuenta:</label>
+																		</div>
+																		<div class="col-lg-9">
+																		<div class="dash-widget text-center"><h4>200 3079473367</h4></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group clearfix">
+																	<div class="row ">
+																		<div class="col-lg-3">
+																			<div class="form-label">Si hizo la transferencia, adjunte el voucher aquí</div>
+																		</div>
+																		<div class="col-lg-9">
+																			<div class="form-group">
+													
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" name="example-file-input-custom">
+														<label class="custom-file-label">adjuntar archivo del voucher</label>
+													</div>
+												</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="tab3">
+														<div class="row">
+															<div class="col-12">
+																<div class="form-group clearfix">
+																	<div class="checkbox checkbox-info">
+																		<label >
+																			
+																			<div class="dash-widget text-center"> Muchas gracias, su operación esta siendo procesada, en breve un asesor se comunicara con usted</div>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<ul class="list-inline wizard mb-0">
+														<li class="previous list-inline-item"><a href="#" class="btn btn-primary mb-0 waves-effect waves-light">Anterior</a>
+														</li>
+														<li class="next list-inline-item float-right"><a href="#" class="btn btn-primary mb-0 waves-effect waves-light">Siguiente</a></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						
+
+					
+					</div>
+
+					<!--Sidebar-right-->
+					<div class="sidebar sidebar-right sidebar-animate">
+						<div class="panel panel-primary">
+							<div class="tab-menu-heading border-0">
+								<div class="tabs-menu ">
+									<!-- Tabs -->
+									<ul class="nav panel-tabs">
+
+										<li><a href="#side2" class="active"  data-toggle="tab"><i class="fas fa-bell"></i> Notificaciones</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="panel-body tabs-menu-body p-0 border-0">
+								<div class="tab-content">
+
+
+									<div class="tab-pane active " id="side2">
+										<div class="list-group list-group-flush ">
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/12.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Madeleine</strong> Hey! there I' am available....
+													<div class="small text-muted">
+														3 hours ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/male/21.jpg"></span>
+												</div>
+												<div>
+													<strong>Anthony</strong> New product Launching...
+													<div class="small text-muted">
+														5 hour ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/29.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Olivia</strong> New Schedule Realease......
+													<div class="small text-muted">
+														45 mintues ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/21.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Madeleine</strong> Hey! there I' am available....
+													<div class="small text-muted">
+														3 hours ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/male/11.jpg"></span>
+												</div>
+												<div>
+													<strong>Anthony</strong> New product Launching...
+													<div class="small text-muted">
+														5 hour ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/19.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Olivia</strong> New Schedule Realease......
+													<div class="small text-muted">
+														45 mintues ago
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/Sidebar-right-->
+
+					<!--footer-->
+					<footer class="footer">
+						<div class="container">
+							<div class="row align-items-center flex-row-reverse text-white-50">
+								<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+									Copyright © 2019 <a href="#">Fortune Online</a>. Designed by <a href="#">Bluecomunicadores</a> All rights reserved.
+								</div>
+							</div>
+						</div>
+					</footer>
+					<!-- End Footer-->
+				</div>
+			</div>
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top"><i class="fas fa-angle-up "></i></a>
+
+		<!-- Dashboard Core -->
+		<script src="../assets/js/vendors/jquery-3.2.1.min.js"></script>
+		<script src="../assets/js/vendors/jquery.sparkline.min.js"></script>
+		<script src="../assets/js/vendors/selectize.min.js"></script>
+		<script src="../assets/js/vendors/jquery.tablesorter.min.js"></script>
+		<script src="../assets/js/vendors/circle-progress.min.js"></script>
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Bootstrap.min js-->
+		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Side menu js -->
+		<script src="../assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Input Mask Plugin -->
+		<script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
+
+		
+
+		<!-- Dashboard js -->
+		<script src="../assets/js/vendors/jquery-3.2.1.min.js"></script>
+		<script src="../assets/js/vendors/jquery.sparkline.min.js"></script>
+		<script src="../assets/js/vendors/selectize.min.js"></script>
+		<script src="../assets/js/vendors/jquery.tablesorter.min.js"></script>
+		<script src="../assets/js/vendors/circle-progress.min.js"></script>
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Bootstrap.min js-->
+		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Side menu js -->
+		<script src="../assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- peitychart -->
+		<script src="../assets/plugins/peitychart/jquery.peity.min.js"></script>
+
+		<!--Time Counter -->
+		<script src="../assets/plugins/counters/jquery.missofis-countdown.js"></script>
+		<script src="../assets/plugins/counters/counter.js"></script>
+
+		<!--Counters -->
+		<script src="../assets/plugins/counters/counterup.min.js"></script>
+		<script src="../assets/plugins/counters/waypoints.min.js"></script>
+
+		<!-- Sidebar js -->
+		<script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+		<!--Custom js -->
+		<script src="../assets/js/custom.js"></script>
+		
+		<!--Accordion-Wizard-Form js-->
+		<script src="../assets/plugins/accordion-Wizard-Form/jquery.accordion-wizard.min.js"></script>
+		<script src="../assets/plugins/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+		<script src="../assets/js/wizard.js"></script>
+	</body>
+</html>

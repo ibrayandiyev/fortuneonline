@@ -1,0 +1,22 @@
+.page{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+}
+body{
+	background:#3f055f;
+}
+.page-main{
+	background:linear-gradient(125deg, #77c258 0%, #7c18ac 100%);
+}
+.horizontalMenu>.horizontalMenu-list>li>a .fa{
+	margin-right:9px !important;
+}

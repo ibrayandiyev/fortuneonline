@@ -1,0 +1,10 @@
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+azure
+------------
+Usuario: admin@acity.onmicrosoft.com
+Password: Atlantis@2019
+------------
+servidor: clienteatlantic.database.windows.net
+us: ratlantic
+ps: r@tlant1c

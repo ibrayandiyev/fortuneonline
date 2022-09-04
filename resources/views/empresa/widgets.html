@@ -1,0 +1,2875 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#0061da">
+		<meta name="theme-color" content="#1643a3">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="../assets/images/brand/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+
+		<!-- Title -->
+		<title>Getren - Bootstrap4 Responsive Admin WebApp Dashboard Template</title>
+
+		<!--Bootstrap.min css-->
+		<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+        <!--Font Awesome-->
+		<link href="../assets/plugins/fontawesome-free/css/all.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="../assets/css/dashboard.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!-- Sidemenu Css -->
+		<link href="../assets/plugins/toggle-sidebar/css/sidemenu-closed-light.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="../assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+		<!-- Sidebar css -->
+		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+	</head>
+	<body class="app sidebar-mini rtl">
+
+		<!-- Global Loader-->
+		<div id="global-loader"><img src="../assets/images/loader.svg" alt="loader"></div>
+
+		<div class="page">
+			<div class="page-main">
+				<!-- Navbar-->
+				<header class="app-header header">
+					<!-- Navbar Right Menu-->
+					<div class="container-fluid">
+						<div class="d-flex">
+							<a class="header-brand" href="index.html">
+								<img alt="logo" class="header-brand-img main-logo" src="../assets/images/brand/logo1.png">
+								<img alt="logo" class="header-brand-img mobile-logo" src="../assets/images/brand/icon.png">
+							</a>
+							<div class="d-none d-sm-flex">
+								<a href="#" data-toggle="search" class="icon navsearch">
+									<i class="fe fe-search"></i>
+								</a>
+							</div>
+							<!-- Sidebar toggle button-->
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<div class="header-searchinput">
+								<form class="form-inline">
+									<div class="search-element mr-3">
+										<input class="form-control header-search" type="search" placeholder="Search" aria-label="Search">
+										<span class="search-icon"><i class="fa fa-search"></i></span>
+									</div>
+								</form>
+							</div>
+							<div class="dropdown d-sm-flex d-none header-message">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fe fe-grid mr-2"></i><span class="lay-outstyle">Layout styles</span>
+									<span class="pulse2 bg-danger" aria-hidden="true"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-icon.html">Icon Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu.html">Icon Closed Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay2.html">Icon Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay.html">Closed Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="horizontal.html">Horizontal Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-2.html">Light Layout</a>
+								</div>
+							</div>
+							<div class="d-flex order-lg-2 ml-auto">
+								<div class="d-sm-flex d-none">
+									<a href="#" class="nav-link icon full-screen-link">
+										<i class="fe fe-minimize fullscreen-button"></i>
+									</a>
+								</div>
+								<div class="dropdown d-sm-flex d-none header-contact">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fe fe-user"></i>
+										<span class="nav-unread badge badge-danger  badge-pill">3</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item text-center" href="#"> Open Contact List</a>
+									<div class="dropdown-divider"></div>
+										<a class="dropdown-item d-flex pb-3" href="#">
+											<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/4.jpg"></span>
+											<div>
+												<strong>Madeleine Scott</strong> Sent you add request
+												<div class="small text-muted">
+													view profile
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item d-flex pb-3" href="#">
+											<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/14.jpg"></span>
+											<div>
+												<strong>rebica</strong> Suggestions for you
+												<div class="small text-muted">
+													view profile
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item d-flex pb-3" href="#">
+											<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/1.jpg"></span>
+											<div>
+												<strong>Devid robott</strong> sent you add request
+												<div class="small text-muted">
+													view profile
+												</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div><a class="dropdown-item text-center " href="#">View all contact list</a>
+									</div>
+								</div>
+								<div class="dropdown d-sm-flex d-none header-message">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fe fe-mail"></i>
+										<span class="pulse bg-success" aria-hidden="true"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item text-center" href="#">2 New Messages</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item d-flex pb-3" href="#">
+											<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/41.jpg"></span>
+											<div>
+												<strong>Madeleine</strong> Hey! there I' am available....
+												<div class="small text-muted">
+													3 hours ago
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/1.jpg"></span>
+											<div>
+												<strong>Anthony</strong> New product Launching...
+												<div class="small text-muted">
+													5 hour ago
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/18.jpg"></span>
+											<div>
+												<strong>Olivia</strong> New Schedule Realease......
+												<div class="small text-muted">
+													45 mintues ago
+												</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item text-center" href="#">See all Messages</a>
+									</div>
+								</div>
+								<button class="navbar-toggler navresponsive-toggler d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+									aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon fe fe-more-vertical text-white"></span>
+								</button>
+								<!--Navbar -->
+
+								<div class="dropdown">
+									<a class="nav-link pr-0 leading-none d-flex" data-toggle="dropdown" href="#">
+										<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/25.jpg"></span>
+										<span class="ml-2 d-none d-lg-block">
+											<span class="text-dark">Jenna Side</span>
+										</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-user"></i>My Profile</a>
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-edit"></i>My Schedule</a>
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-mail"></i> My Inbox</a>
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-unlock"></i> Look Screen</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-power"></i> Log Out</a>
+									</div>
+								</div>
+								<div class="dropdown d-md-flex header-settings">
+									<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+										<i class="fe fe-bell"></i><span class=" nav-unread badge badge-info  badge-pill">6</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="mb-1 navbar navbar-expand-lg  responsive-navbar navbar-dark d-sm-none bg-white">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+						<div class="d-flex order-lg-2 ml-auto">
+							<div class="">
+								<a href="#" data-toggle="search" class="icon navsearch">
+									<i class="fe fe-search"></i>
+								</a>
+							</div>
+							<div class="d-md-flex">
+								<a href="#" class="nav-link icon full-screen-link text-dark">
+									<i class="fe fe-minimize fullscreen-button"></i>
+								</a>
+							</div>
+							<div class="dropdown  d-md-flex header-contact">
+								<a class="nav-link icon text-dark" data-toggle="dropdown">
+									<i class="fe fe-user"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+								<a class="dropdown-item text-center" href="#"> Open Contact List</a>
+								<div class="dropdown-divider"></div>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/4.jpg"></span>
+										<div>
+											<strong>Madeleine Scott</strong> Sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/14.jpg"></span>
+										<div>
+											<strong>rebica</strong> Suggestions for you
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/1.jpg"></span>
+										<div>
+											<strong>Devid robott</strong> sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div><a class="dropdown-item text-center " href="#">View all contact list</a>
+								</div>
+							</div>
+							<div class="dropdown d-md-flex header-message">
+								<a class="nav-link icon text-dark" data-toggle="dropdown">
+									<i class="fe fe-mail"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item text-center" href="#">2 New Messages</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/male/41.jpg"></span>
+										<div>
+											<strong>Madeleine</strong> Hey! there I' am available....
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/1.jpg"></span>
+										<div>
+											<strong>Anthony</strong> New product Launching...
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#"><span class="avatar brround mr-3 align-self-center cover-image" data-image-src="../assets/images/users/female/18.jpg"></span>
+										<div>
+											<strong>Olivia</strong> New Schedule Realease......
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center" href="#">See all Messages</a>
+								</div>
+							</div>
+							<div class="dropdown d-md-flex header-message">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fe fe-grid"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-icon.html">Icon Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu.html">Icon Closed Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay2.html">Icon Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="overlay.html">Closed Overlay Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="horizontal.html">Horizontal Layout</a>
+									<a class="dropdown-item d-flex pb-3" href="sidemenu-2.html">Light Layout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/.Navbar -->
+
+				<!-- Sidebar menu-->
+				<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar">
+					<div class="app-sidebar__user">
+						<div class="user-body">
+							<span class="avatar avatar-lg brround text-center cover-image" data-image-src="../assets/images/users/female/25.jpg"></span>
+						</div>
+						<div class="user-info">
+							<a href="#" class="ml-2"><span class="text-dark app-sidebar__user-name font-weight-semibold">Jenna Side</span><br>
+								<span class="text-muted app-sidebar__user-name text-sm"> Web Designer</span>
+							</a>
+						</div>
+					</div>
+					<ul class="side-menu">
+						<li class="slide">
+							<a class="side-menu__item " data-toggle="slide" href="#"><i class="side-menu__icon si si-screen-desktop"></i><span class="side-menu__label">Dashboard</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li><a class="slide-item" href="index.html">Dashboard 01</a></li>
+								<li><a class="slide-item" href="index2.html">Dashboard 02</a></li>
+								<li><a class="slide-item" href="index3.html">Dashboard 03</a></li>
+								<li><a class="slide-item" href="index4.html">Dashboard 04</a></li>
+								<li><a class="slide-item" href="index5.html">Dashboard 05</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item active" href="widgets.html"><i class="side-menu__icon si si-layers"></i><span class="side-menu__label">Widgets</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-rocket"></i><span class="side-menu__label">Ui Design</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="cards.html" class="slide-item">Cards</a>
+								</li>
+								<li>
+									<a href="chat.html" class="slide-item">Chat</a>
+								</li>
+								<li>
+									<a href="notify.html" class="slide-item">Notifications</a>
+								</li>
+								<li>
+									<a href="sweetalert.html" class="slide-item">Sweet alerts</a>
+								</li>
+								<li>
+									<a href="rangeslider.html" class="slide-item">Range slider</a>
+								</li>
+								<li>
+									<a href="scroll.html" class="slide-item">Content Scroll bar</a>
+								</li>
+								<li>
+									<a href="counters.html" class="slide-item">Counters</a>
+								</li>
+								<li>
+									<a href="loaders.html" class="slide-item">Loaders</a>
+								</li>
+								<li>
+									<a href="rating.html" class="slide-item">Rating</a>
+								</li>
+								<li>
+									<a href="time-line.html" class="slide-item">Time Line</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-chart"></i><span class="side-menu__label">Chart Types</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="chart-morris.html" class="slide-item">Morris Chart </a>
+								</li>
+								<li>
+									<a href="chart-echart.html" class="slide-item">Echarts</a>
+								</li>
+								<li>
+									<a href="charts-peity.html" class="slide-item">Peity Charts</a>
+								</li>
+								<li>
+									<a href="chart-chartist.html" class="slide-item">Chartist Charts</a>
+								</li>
+								<li>
+									<a href="chart-hightchart.html" class="slide-item">High Charts</a>
+								</li>
+								<li>
+									<a href="chartjs.html" class="slide-item">Chart js</a>
+								</li>
+								<li>
+									<a href="chart-flot.html" class="slide-item">Chart flot</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-calendar"></i><span class="side-menu__label">Calendar</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="calendar.html" class="slide-item">Default calendar</a>
+								</li>
+								<li>
+									<a href="calendar2.html" class="slide-item">Full calendar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-diamond"></i><span class="side-menu__label">Components</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="modal.html" class="slide-item">Modal</a>
+								</li>
+								<li>
+									<a href="tooltipandpopover.html" class="slide-item">Tooltip and popover</a>
+								</li>
+								<li>
+									<a href="progress.html" class="slide-item">Progress</a>
+								</li>
+
+								<li>
+									<a href="carousel.html" class="slide-item">Carousels</a>
+								</li>
+								<li>
+									<a href="accordion.html" class="slide-item">Accordions</a>
+								</li>
+								<li>
+									<a href="tabs.html" class="slide-item">Tabs</a>
+								</li>
+								<li>
+									<a href="headers.html" class="slide-item">Headers</a>
+								</li>
+								<li>
+									<a href="footers.html" class="slide-item">Footers</a>
+								</li>
+								<li>
+									<a href="crypto-currencies.html" class="slide-item">Crypto-currencies</a>
+								</li>
+								<li>
+									<a href="users-list.html" class="slide-item">User List</a>
+								</li>
+								<li>
+									<a href="search.html" class="slide-item">Search page</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item" href="maps.html"><i class="side-menu__icon si si-map"></i><span class="side-menu__label">Maps</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-grid"></i><span class="side-menu__label">Elements</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="alerts.html" class="slide-item">Alerts</a>
+								</li>
+								<li>
+									<a href="buttons.html" class="slide-item">Buttons</a>
+								</li>
+								<li>
+									<a href="colors.html" class="slide-item">Colors</a>
+								</li>
+								<li>
+									<a href="avatars.html" class="slide-item">Avatars</a>
+								</li>
+								<li>
+									<a href="dropdown.html" class="slide-item">Drop downs</a>
+								</li>
+								<li>
+									<a href="thumbnails.html" class="slide-item">Thumbnails</a>
+								</li>
+								<li>
+									<a href="mediaobject.html" class="slide-item">Media Object</a>
+								</li>
+								<li>
+									<a href="list.html" class="slide-item">List</a>
+								</li>
+								<li>
+									<a href="tags.html" class="slide-item">Tags</a>
+								</li>
+								<li>
+									<a href="pagination.html" class="slide-item">Pagination</a>
+								</li>
+								<li>
+									<a href="navigation.html" class="slide-item">Navigation</a>
+								</li>
+								<li>
+									<a href="typography.html" class="slide-item">Typography</a>
+								</li>
+								<li>
+									<a href="breadcrumbs.html" class="slide-item">Breadcrumbs</a>
+								</li>
+								<li>
+									<a href="badge.html" class="slide-item">Badges</a>
+								</li>
+								<li>
+									<a href="jumbotron.html" class="slide-item">Jumbotron</a>
+								</li>
+								<li>
+									<a href="panels.html" class="slide-item">Panels</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-calculator"></i><span class="side-menu__label">Tables</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="tables.html" class="slide-item">Default table</a>
+								</li>
+								<li>
+									<a href="datatable.html" class="slide-item">Data Table</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-briefcase"></i><span class="side-menu__label">Pages</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="profile.html" class="slide-item">Profile</a>
+								</li>
+								<li>
+									<a href="editprofile.html" class="slide-item">Edit Profile</a>
+								</li>
+								<li>
+									<a href="email.html" class="slide-item">Email</a>
+								</li>
+								<li>
+									<a href="emailservices.html" class="slide-item">Email Inbox</a>
+								</li>
+								<li>
+									<a href="gallery.html" class="slide-item">Gallery</a>
+								</li>
+								<li>
+									<a href="login.html" class="slide-item">Login</a>
+								</li>
+								<li>
+									<a href="register.html" class="slide-item">Register</a>
+								</li>
+								<li>
+									<a href="forgot-password.html" class="slide-item">Forgot password</a>
+								</li>
+								<li>
+									<a href="lockscreen.html" class="slide-item">Lock screen</a>
+								</li>
+								<li>
+									<a href="empty.html" class="slide-item">Empty Page</a>
+								</li>
+								<li>
+									<a href="construction.html" class="slide-item">Under Construction</a>
+								</li>
+								<li>
+									<a href="about.html" class="slide-item">About Company</a>
+								</li>
+								<li>
+									<a href="services.html" class="slide-item">Services</a>
+								</li>
+								<li>
+									<a href="faq.html" class="slide-item">FAQS</a>
+								</li>
+								<li>
+									<a href="terms.html" class="slide-item">Terms and Conditions</a>
+								</li>
+								<li>
+									<a href="pricing.html" class="slide-item">Pricing Tables</a>
+								</li>
+								<li>
+									<a href="blog.html" class="slide-item">Blog</a>
+								</li>
+								<li>
+									<a href="invoice.html" class="slide-item">Invoice</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-flag"></i><span class="side-menu__label">Icons</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="icons.html" class="slide-item">Font Awesome</a>
+								</li>
+								<li>
+									<a href="icons2.html" class="slide-item">Material Design Icons</a>
+								</li>
+								<li>
+									<a href="icons3.html" class="slide-item">Simple Line Iocns</a>
+								</li>
+								<li>
+									<a href="icons4.html" class="slide-item">Feather Icons</a>
+								</li>
+								<li>
+									<a href="icons5.html" class="slide-item">Ionic Icons</a>
+								</li>
+								<li>
+									<a href="icons6.html" class="slide-item">Flags Icons</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-docs"></i><span class="side-menu__label">Forms</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="form-elements.html" class="slide-item">Form Elements</a>
+								</li>
+								<li>
+									<a href="form-wizard.html" class="slide-item">Form-wizard Elements</a>
+								</li>
+								<li>
+									<a href="form-edior.html" class="slide-item">Form Wizard</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-basket-loaded"></i><span class="side-menu__label">E-commerce</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="shop.html" class="slide-item">Products</a>
+								</li>
+								<li>
+									<a href="shop-des.html" class="slide-item">Product Details</a>
+								</li>
+								<li>
+									<a href="cart.html" class="slide-item">Cart</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon si si-exclamation"></i><span class="side-menu__label">Error pages</span><i class="angle fas fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="400.html" class="slide-item">400 Error</a>
+								</li>
+								<li>
+									<a href="401.html" class="slide-item">401 Error</a>
+								</li>
+								<li>
+									<a href="500.html" class="slide-item">500 Error</a>
+								</li>
+								<li>
+									<a href="503.html" class="slide-item">503 Error</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</aside>
+				<!--side-menu-->
+
+				<div class=" app-content my-3 my-md-5">
+					<div class="side-app">
+						<!--Page Header-->
+						<div class="mb-5">
+							<div class="page-header  mb-0">
+								<h4 class="page-title">Widgets</h4>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Widgets</li>
+								</ol>
+							</div>
+						</div>
+						<!--page header-->
+
+						<div class="row">
+							<div class="col-sm-6 col-lg-6 col-xl-3">
+								<div class="card">
+									<div class="card-body text-center">
+										<img src="../assets/images/svgs/png/057-location.png" alt="img" class="w-8 h-8 mb-4">
+										<div class="svg-btn">
+											<a class="btn btn-primary btn-pill" href="#">Locations</a>
+										</div>
+										<h3 class="mt-4">245</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-6 col-xl-3">
+								<div class="card">
+									<div class="card-body text-center">
+										<img src="../assets/images/svgs/png/018-clipboard-1.png" alt="img" class="w-8 h-8 mb-4">
+										<div class="svg-btn">
+											<a class="btn btn-primary btn-pill" href="#">Tasks</a>
+										</div>
+										<h3 class="mt-4">365</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-6 col-xl-3">
+								<div class="card">
+									<div class="card-body text-center">
+										<img src="../assets/images/svgs/png/102-product.png" alt="img" class="w-8 h-8 mb-4">
+										<div class="svg-btn">
+											<a class="btn btn-primary btn-pill" href="#">Sales</a>
+										</div>
+										<h3 class="mt-4">4875</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-6 col-xl-3">
+								<div class="card">
+									<div class="card-body text-center">
+										<img src="../assets/images/svgs/png/101-priority-1.png" alt="img" class="w-8 h-8 mb-4">
+										<div class="svg-btn">
+											<a class="btn btn-primary btn-pill" href="#">Income</a>
+										</div>
+										<h3 class="mt-4">$71,256</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12 col-sm-6">
+								<div class="card">
+									<div class="card-body d-flex">
+										<img src="../assets/images/svgs/png/097-premium.png" alt="img" class="w-8 h-8">
+										<div class="svg-icons float-right text-right ml-auto">
+											<h2>25,356</h2>
+											<span>Locations</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12 col-sm-6">
+								<div class="card">
+									<div class="card-body d-flex">
+										<img src="../assets/images/svgs/png/115-shopping-cart.png" alt="img" class="w-8 h-8">
+										<div class="svg-icons float-right text-right ml-auto">
+											<h2>26,536</h2>
+											<span>Orders</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12 col-sm-6">
+								<div class="card">
+									<div class="card-body d-flex">
+										<img src="../assets/images/svgs/png/088-package.png" alt="img" class="w-8 h-8">
+										<div class="svg-icons float-right text-right ml-auto">
+											<h2>17,356</h2>
+											<span>Delivery Items</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12 col-sm-6">
+								<div class="card">
+									<div class="card-body d-flex">
+										<img src="../assets/images/svgs/png/080-monitor.png" alt="img" class="w-8 h-8">
+										<div class="svg-icons float-right text-right ml-auto">
+											<h2>65,458</h2>
+											<span>Dashboard Views</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-3 col-lg-6">
+								<div class="card">
+									<div class="card-body dash2">
+										<div class="chart-circle chart-circle-sm float-left" data-value="0.67" data-thickness="8" data-color="#53127F">
+											<div class="chart-circle-value fs"><span class="fe fe-git-branch"></span></div>
+										</div>
+										<span class="count-numbers counter">12</span>
+										<span class="count-name">Projects</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6">
+								<div class="card">
+									<div class="card-body dash2">
+										<div class="chart-circle chart-circle-sm float-left" data-value="0.67" data-thickness="8" data-color="#f2574c">
+											<div class="chart-circle-value fs"><span class="fe fe-send"></span></div>
+										</div>
+										<span class="count-numbers counter">599</span>
+										<span class="count-name">Instances</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6">
+								<div class="card">
+									<div class="card-body dash2">
+										<div class="chart-circle chart-circle-sm float-left" data-value="0.67" data-thickness="8" data-color="#45aaf2">
+											<div class="chart-circle-value fs"><span class="fe fe-database"></span></div>
+										</div>
+										<span class="count-numbers counter">6875</span>
+										<span class="count-name">Data</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6">
+								<div class="card">
+									<div class="card-body dash2">
+										<div class="chart-circle chart-circle-sm float-left" data-value="0.67" data-thickness="8" data-color="#ecb403">
+											<div class="chart-circle-value fs"><span class="fe fe-users"></span></div>
+										</div>
+										<span class="count-numbers counter">35</span>
+										<span class="count-name">Users</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 colmd-12">
+								<div class="card bg-teal text-white">
+									<div class="card-body dash2">
+										<i class="fe fe-git-branch"></i>
+										<span class="count-numbers counter">12</span>
+										<span class="count-name">Projects</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 colmd-12">
+								<div class="card bg-pink text-white">
+									<div class="card-body dash2">
+										<i class="fe fe-send"></i>
+										<span class="count-numbers counter">599</span>
+										<span class="count-name">Instances</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 colmd-12">
+								<div class="card bg-green text-white">
+									<div class="card-body dash2">
+										<i class="fe fe-database"></i>
+										<span class="count-numbers counter">6875</span>
+										<span class="count-name">Data</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 colmd-12">
+								<div class="card bg-purple text-white">
+									<div class="card-body dash2">
+										<i class="fe fe-users"></i>
+										<span class="count-numbers counter">35</span>
+										<span class="count-name">Users</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<div class="dash-2">
+													<h3 class="text-info">893</h3>
+													<span>Total Orders</span>
+												</div>
+											</div>
+											<div class="col col-auto">
+												<span class="sparkline_bar1 " ></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<div class="dash-2">
+													<h3 class="text-primary">$2,828</h3>
+													<span>Total Income</span>
+												</div>
+											</div>
+											<div class="col col-auto">
+												<span class="sparkline23" ></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<div class="dash-2">
+													<h3 class="text-danger">$835</h3>
+													<span>Expenses</span>
+												</div>
+											</div>
+											<div class="col col-auto">
+												<span class="sparkline_bar" ></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<div class="dash-2">
+													<h3 class="text-success">$1,524</h3>
+													<span>Net Profit</span>
+												</div>
+											</div>
+											<div class="col col-auto">
+												<span class="sparkline22"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="float-left">
+											<p class="mb-0">Views</p>
+											<h2 class=" mb-0">2,785</h2>
+										</div>
+										<div class="float-right">
+											<span class="mini-stat-icon bg-info"><i class="si si-eye "></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="float-left">
+											<p class="mb-0">Conversion</p>
+											<h2 class=" mb-0">1,378</h2>
+										</div>
+										<div class="float-right">
+											<span class="mini-stat-icon bg-danger"><i class="si si-volume-2"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="float-left">
+											<p class="mb-0">Sales</p>
+											<h2 class=" mb-0">936</h2>
+										</div>
+										<div class="float-right">
+											<span class="mini-stat-icon bg-warning"><i class="si si-chart"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="float-left">
+											<p class="mb-0">Users</p>
+											<h2 class="mb-0">5,876</h2>
+										</div>
+										<div class="float-right">
+											<span class="mini-stat-icon bg-success"><i class="si si-user"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="dash-widget text-center">
+											<p>Total Income</p>
+											<h3>$75,634,578</h3>
+											<p class="mb-0 text-muted"><i class="fas fa-arrow-alt-circle-down text-red mr-1"></i> 2% decrease last year</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="dash-widget text-center">
+											<p>Total Earnings</p>
+											<h3>$24,863,269</h3>
+											<p class="mb-0 text-muted"><i class="fas fa-arrow-alt-circle-up text-green mr-1"></i> 5% increase last year</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="dash-widget text-center">
+											<p>Total Balance</p>
+											<h3>$15,755,263</h3>
+											<p class="mb-0 text-muted"><i class="fas fa-arrow-alt-circle-up text-green mr-1"></i> 10% increase last year</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="plan-card text-center">
+											<i class="fas fa-share-alt text-primary plan-icon"></i>
+											<h6 class="text-drak text-uppercase mt-2">Total Shares</h6>
+											<h2 class="mb-2">678</h2>
+											<span class="badge badge-success"> +89% </span>
+											<span class="text-muted">From previous month</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="plan-card text-center">
+											<i class="fas fa-comments plan-icon text-primary"></i>
+											<h6 class="text-drak text-uppercase mt-2">Total Comments</h6>
+											<h2 class="mb-2">493</h2>
+											<span class="badge badge-danger"> +76% </span>
+											<span class="text-muted">From previous month</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="plan-card text-center">
+											<i class="fas fa-thumbs-up plan-icon text-primary"></i>
+											<h6 class="text-drak text-uppercase mt-2">Total Likes</h6>
+											<h2 class="mb-2">3,287</h2>
+											<span class="badge badge-success"> +18% </span>
+											<span class="text-muted">From previous month</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="plan-card text-center">
+											<i class="fas fa-eye plan-icon text-primary"></i>
+											<h6 class="text-drak text-uppercase mt-2">Total Views</h6>
+											<h2 class="mb-2">279</h2>
+											<span class="badge badge-danger"> +5% </span>
+											<span class="text-muted">From previous month</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-xl-3 col-lg-6">
+								<div class="card bg-success text-center">
+									<div class="card-body">
+										<p class="mb-0 text-white-50">Total Followers</p>
+										<h2 class=" mb-0">2,785</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-3 col-lg-6">
+								<div class="card bg-info text-center">
+									<div class="card-body">
+										<p class="mb-0 text-white-50">Link Clicks</p>
+										<h2 class=" mb-0">3,639</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-3 col-lg-6">
+								<div class="card bg-danger text-center">
+									<div class="card-body">
+										<p class="mb-0 text-white-50">Page Impression</p>
+										<h2 class=" mb-0">3,678</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-3 col-lg-6">
+								<div class="card bg-warning text-white text-center">
+									<div class="card-body">
+										<p class="mb-0 text-white-50">Page Reach</p>
+										<h2 class=" mb-0">82%</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-3 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Invited People</h3>
+									</div>
+									<div class="card-body text-center">
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/15.jpg">
+										  <span class="avatar-status bg-green"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/male/20.jpg">
+										  <span class="avatar-status bg-green"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/16.jpg">
+										  <span class="avatar-status bg-red"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/17.jpg">
+										  <span class="avatar-status bg-green"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/18.jpg">
+										  <span class="avatar-status bg-red"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/13.jpg">
+										  <span class="avatar-status bg-green"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2" data-image-src="../assets/images/users/female/25.jpg">
+										  <span class="avatar-status bg-warning"></span>
+										</span>
+										<span class="avatar avatar-lg brround cover-image m-2">
+										+32
+										</span>
+										<div class="text-center mt-5">
+											<a class="btn btn-primary btn-pill" href="#">View All</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-body text-center profile-user">
+										<div><span class="avatar avatar-xxl brround cover-image m-2" data-image-src="../assets/images/users/female/25.jpg"></span></div>
+										<h4 class="mb-2">Stacie Schaaf</h4>
+										<p class="text-muted">Administrator</p>
+										<button type="button" class="btn btn-facebook btn-sm mt-1"><i class="fab fa-facebook mr-2"></i>Facebook</button>
+										<button type="button" class="btn btn-twitter btn-sm mt-1"><i class="fab fa-twitter mr-2"></i>Twitter</button>
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col">
+												<span class="btn btn-outline-danger btn-sm follow-btn">Message</span>
+											</div>
+											<div class="col col-auto">
+												<span class="btn btn-outline-primary btn-sm follow-btn">Follow</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-body text-center profile-user">
+										<div><span class="avatar avatar-xxl brround cover-image m-2" data-image-src="../assets/images/users/male/25.jpg"></span></div>
+										<h4 class="mb-2">Deandre Feiler</h4>
+										<p class="text-muted">CEO</p>
+										<button type="button" class="btn btn-facebook btn-sm mt-1"><i class="fab fa-facebook mr-2"></i>Facebook</button>
+										<button type="button" class="btn btn-twitter btn-sm mt-1"><i class="fab fa-twitter mr-2"></i>Twitter</button>
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col">
+												<span class="btn btn-outline-danger btn-sm follow-btn">Message</span>
+											</div>
+											<div class="col col-auto">
+												<span class="btn btn-outline-primary btn-sm follow-btn">Follow</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-body text-center">
+										<img class="" alt="img" src="../assets/images/photos/31.jpg">
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col">
+												<p class="mb-0"><span class="font-weight-bold">54</span> Likes <span class="font-weight-bold ml-4">24</span> Comments</p>
+											</div>
+											<div class="col col-auto">
+												<span><i class="fas fa-share-square"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="">
+										<div class="row no-gutters">
+											<div class="col-lg-3 col-md-6 border-right">
+												<div class="card-body text-center">
+													<div class="dash3">
+														<h5 class="text-muted">Uploads</h5>
+														<h4 class="counter text-primary">3,628</h4>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-6 border-right">
+												<div class="card-body text-center">
+													<div class="dash3">
+														<h5 class="text-muted">Shares</h5>
+														<h4 class="counter text-danger">593</h4>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-6 border-right">
+												<div class="card-body text-center">
+													<div class="dash3">
+														<h5 class="text-muted">Comments</h5>
+														<h4 class="counter text-success">168</h4>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-6 border-right">
+												<div class="card-body text-center">
+													<div class="dash3">
+														<h5 class="text-muted">Visits</h5>
+														<h4 class="counter text-info">7,945</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row ">
+							<div class="col-md-12  col-xl-4 features">
+								<div class="card feature">
+									<div class="card-body text-center">
+									<h5>Business</h5>
+										<div class="icon icon-shape bg-primary rounded-circle text-white mb-3">
+											<i class="fas fa-briefcase text-white"></i>
+										</div>
+										<h2 class="counter">4215</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12  col-xl-4 features">
+								<div class="card feature">
+									<div class="card-body text-center">
+									   <h5>Shares</h5>
+										<div class="icon icon-shape bg-primary rounded-circle text-white mb-3">
+											<i class="fas fa-share-square text-white"></i>
+										</div>
+										<h2 class="counter"> 1,478.53</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12  col-xl-4 features">
+								<div class="card feature">
+									<div class="card-body text-center">
+									    <h5>Employees</h5>
+										<div class="icon icon-shape bg-primary rounded-circle text-white mb-3">
+											<i class="fas fa-user-circle text-white"></i>
+										</div>
+										<h2 class="counter">2,545,142</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="card-box tilebox-one">
+											<i class="icon-layers float-right text-muted"><i class="fas fa-cubes text-primary" aria-hidden="true"></i></i>
+											<h6 class="text-drak text-uppercase mt-0">marketing</h6>
+											<h2 class="m-b-20">123</h2>
+											<span class="badge badge-success"> +12% </span> <span class="text-muted">From previous period</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="card-box tilebox-one">
+											<i class="icon-layers float-right text-muted"><i class="fas fa-chart-bar text-primary" aria-hidden="true"></i></i>
+											<h6 class="text-drak text-uppercase mt-0">design</h6>
+											<h2 class="m-b-20">1,458</h2>
+											<span class="badge badge-secondary"> +56% </span> <span class="text-muted">Last year</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="mini-stat clearfix bg-primary rounded">
+									<span class="mini-stat-icon"><i class="fab fa-facebook text-primary"></i></span>
+									<div class="mini-stat-info text-white">
+										<span>1,142</span>
+										Facebook Like
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="mini-stat clearfix bg-primary rounded">
+									<span class="mini-stat-icon"><i class="fab fa-twitter text-primary"></i></span>
+									<div class="mini-stat-info text-white">
+										<span>4,212</span>
+										Twitter Followers
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="mini-stat clearfix bg-primary rounded">
+									<span class="mini-stat-icon"><i class="fab fa-google-plus text-primary"></i></span>
+									<div class="mini-stat-info text-white">
+										<span>456</span>
+										Google+ Posts
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="mini-stat clearfix bg-primary rounded">
+									<span class="mini-stat-icon"><i class="fab fa-bitbucket text-primary"></i></span>
+									<div class="mini-stat-info text-white">
+										<span>1,123</span>
+										Repository
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-xl-4 col-md-12">
+								<div class="card box-widget widget-user">
+									<div class="widget-user-header bg-primary" >
+										<h3 class="widget-user-username">Neil Jackson</h3>
+										<h5 class="widget-user-desc">Web Designer</h5>
+									</div>
+									<div class="widget-user-image"><img alt="User Avatar" class="rounded-circle" src="../assets/images/users/male/20.jpg"></div>
+									<div class="box-footer">
+										<div class="row">
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">1,234</h5><span class="text-muted">PRODUCTS</span>
+												</div>
+											</div>
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">2,234</h5><span class="text-muted">PROFITS</span>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="description-block">
+													<h5 class="description-header">23</h5><span class="text-muted">LOSS</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12">
+								<div class="card box-widget widget-user">
+									<div class="widget-user-header bg-danger cover-image" data-image-src="../assets/images/photos/media5.jpg">
+										<h3 class="widget-user-username">Lily Mathis</h3>
+										<h5 class="widget-user-desc">Project Manger</h5>
+									</div>
+									<div class="widget-user-image"><img alt="User Avatar" class="rounded-circle" src="../assets/images/users/female/15.jpg"></div>
+									<div class="box-footer">
+										<div class="row">
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">1,234</h5><span class="text-muted">PRODUCTS</span>
+												</div>
+											</div>
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">2,234</h5><span class="text-muted">PROFITS</span>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="description-block">
+													<h5 class="description-header">23</h5><span class="text-muted">LOSS</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12">
+								<div class="card box-widget widget-user">
+									<div class="widget-user-header bg-teal">
+										<h3 class="widget-user-username">Justin	Ince</h3>
+										<h5 class="widget-user-desc">Sales manger</h5>
+									</div>
+									<div class="widget-user-image"><img alt="User Avatar" class="rounded-circle border" src="../assets/images/users/male/14.jpg"></div>
+									<div class="box-footer">
+										<div class="row">
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">1,234</h5><span class="text-muted">PRODUCTS</span>
+												</div>
+											</div>
+											<div class="col-sm-4 border-right">
+												<div class="description-block">
+													<h5 class="description-header">2,234</h5><span class="text-muted">PROFITS</span>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="description-block">
+													<h5 class="description-header">23</h5><span class="text-muted">LOSS</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card b-1 profile-card mb-20 overflow-hidden">
+									<div class="panel widget">
+										<div class="widget-header bg-primary"></div>
+										<div class="widget-body text-center">
+											<img alt="Profile Picture" class="widget-img rounded-circle" src="../assets/images/users/male/23.jpg">
+											<h4 class="mar-no text-primary">Barry Dalive</h4>
+											<p class="text-muted mar-btm">Administrator</p>
+											<div class="pad-ver">
+												<button class="btn btn-primary">Follow</button>
+												<button class="btn btn-secondary">Message</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card b-1 profile-card mb-20 overflow-hidden">
+									<div class="panel widget">
+										<div class="widget-header bg-success"></div>
+										<div class="widget-body text-center">
+											<img alt="Profile Picture" class="widget-img rounded-circle" src="../assets/images/users/male/3.jpg">
+											<h4 class="mar-no text-primary">Bella Ruse</h4>
+											<p class="text-muted mar-btm">Web and Graphic designer</p>
+
+											<div class="pad-ver">
+												<a class="btn btn-primary btn-icon btn-hover-primary fab fa-facebook icon-lg add-tooltip" href="#" title="" data-original-title="Facebook"></a>
+												<a class="btn btn-primary btn-icon btn-hover-info fab fa-twitter icon-lg add-tooltip" href="#" title="" data-original-title="Twitter"></a>
+												<a class="btn btn-primary btn-icon btn-hover-danger fab fa-google-plus icon-lg add-tooltip" href="#" title="" data-original-title="Google+"></a>
+												<a class="btn btn-primary btn-icon btn-hover-mint fas fa-envelope icon-lg add-tooltip" href="#" title="" data-original-title="Email"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card b-1 profile-card mb-20 overflow-hidden">
+									<div class="panel widget">
+										<div class="widget-header bg-purple">
+											<img class="widget-bg img-responsive" src="../assets/images/photos/media2.jpg" alt="Image">
+										</div>
+										<div class="widget-body text-center pb-5">
+											<img alt="Profile Picture" class="widget-img img-border-light rounded-circle" src="../assets/images/users/male/7.jpg">
+											<h4 class="mar-no text-primary">Abel Body</h4>
+											<p class="text-muted mar-btm">Art Designer</p>
+
+											<ul class="row text-center clearfix mb-0">
+												<li class="col-sm-4">
+													<span class="text-primary font-weight-bold">2,143</span>
+													<p class="text-muted">
+														<small>Following</small>
+													</p>
+												</li>
+												<li class="col-sm-4">
+													<span class="text-primary font-weight-bold">35,123</span>
+													<p class="text-muted">
+														<small>Followers</small>
+													</p>
+												</li>
+												<li class="col-sm-4">
+													<span class="text-primary font-weight-bold">21,289</span>
+													<p class="text-muted">
+														<small>Likes</small>
+													</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card profile-card mb-20 overflow-hidden">
+									<div class="card-body">
+										<div class="panel text-center">
+											<div class="panel-body">
+												<img alt="Avatar" class="img-md mb-4 rounded-circle" src="../assets/images/users/male/13.jpg">
+												<h4 class="mar-no text-primary">Luke Warm</h4>
+												<p>Project manager</p>
+											</div>
+											<p class="text-muted mb-4">
+												ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus.
+											</p>
+											<div class="pad-btm">
+												<button class="btn btn-primary mt-1">Follow</button>
+												<button class="btn btn-secondary mt-1">Message</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-6 col-md-12">
+								<div class="card b-1 hover-shadow mb-20">
+									<div class="media card-body p-0">
+										<div class="product-content product-wrap w-100 clearfix">
+											<div class="row">
+													<div class="col-md-5 col-sm-12 col-xs-12">
+														<div class="product-image">
+															<img src="../assets/images/products/1.png" alt="194x228" class="img-fluid">
+															<span class="tag2 hot bg-primary">
+																HOT
+															</span>
+														</div>
+													</div>
+													<div class="col-md-7 col-sm-12 col-xs-12">
+													<div class="product-deatil">
+														<h5 class="name">
+															<a href="#">
+																Product Title Here <span class="text-muted">Category</span>
+															</a>
+														</h5>
+														<div class="rating">
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star"></i></label>
+															<label><i class="fa fa-star"></i></label>
+														</div>
+														<p class="price-container">
+															<span>$89</span>
+														</p>
+														<span class="tag1"></span>
+													</div>
+													<div class="product-info smart-form mt-5 mb-4">
+														<div class="row">
+															<div class="col-md-12 col-sm-12 col-xs-12">
+																<a href="javascript:void(0);" class="btn btn-primary btn-sm float-left mt-1">Add to cart</a>
+																<a href="javascript:void(0);" class="btn btn-secondary  btn-sm float-left mt-1">View Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-md-12">
+								<div class="card b-1 hover-shadow mb-20">
+									<div class="media card-body p-0">
+										<div class="product-content product-wrap w-100 clearfix">
+											<div class="row">
+													<div class="col-md-5 col-sm-12 col-xs-12">
+														<div class="product-image">
+															<img src="../assets/images/products/2.png" alt="194x228" class="img-fluid">
+															<span class="tag2 sale bg-success">
+																SALE
+															</span>
+														</div>
+													</div>
+													<div class="col-md-7 col-sm-12 col-xs-12">
+													<div class="product-deatil">
+														<h5 class="name">
+															<a href="#">
+																ProducT Title Here <span class="text-muted">Category</span>
+															</a>
+														</h5>
+														<div class="rating">
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star text-warning"></i></label>
+															<label><i class="fa fa-star"></i></label>
+															<label><i class="fa fa-star"></i></label>
+														</div>
+														<p class="price-container">
+															<span>$89</span>
+														</p>
+														<span class="tag1"></span>
+													</div>
+													<div class="product-info smart-form mt-5 mb-4">
+														<div class="row">
+															<div class="col-md-12 col-sm-12 col-xs-12">
+																<a href="javascript:void(0);" class="btn btn-primary btn-sm float-left mt-1">Add to cart</a>
+																<a href="javascript:void(0);" class="btn btn-secondary  btn-sm float-left mt-1">View Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card b-1 hover-shadow mb-20">
+								   <div class="media card-body">
+									  <div class="media-left pr-12"> <img class="avatar avatar-xl rounded-circle" src="../assets/images/users/male/3.jpg" alt="..."></div>
+									  <div class="media-body">
+										 <div class="mb-2"> <span class="fs-20 pr-16">Dan Delion</span></div>
+										 <small class="fs-16 fw-300 ls-1">Front-end developer</small>
+									  </div>
+									  <div class="media-right text-right d-none d-md-block">
+										 <p class="fs-14 text-fade mb-12"><i class="fas fa-map-marker-alt pr-1"></i> Menlo Park, CA</p>
+										 <span class="text-muted"><i class="fas fa-money-bill-alt"></i> $20 per hour</span>
+									  </div>
+								   </div>
+								   <footer class="card-footer flexbox align-items-center">
+									  <div class="float-left"> <strong>Applied on:</strong> <span>11 Jan, 2017</span></div>
+									  <div class="card-hover-show float-right">
+											<a class="btn btn-xs fs-10 btn-bold btn-primary" href="#">Download CV</a>
+											<a class="btn btn-xs fs-10 btn-bold btn-primary" href="#" data-toggle="modal" data-target="#modal-contact">Contact</a>
+											<a class="btn btn-xs fs-10 btn-bold btn-primary" href="#">Delete</a>
+										</div>
+								   </footer>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="flexbox align-items-center px-20 pt-20">
+										<div class="dropdown">
+											<a aria-expanded="false" data-toggle="dropdown" href="#"><i class="fas fa-ellipsis-h rotate-90 text-muted"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Profile</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-comments"></i> Messages</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-phone"></i> Call</a>
+												<div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-fw fa-download"></i> Download Resume</a>
+											</div>
+										</div>
+									</div>
+									<div class="card-body text-center pt-1 pb-20">
+										<a href="#"><img class="avatar avatar-xxl rounded-circle mb-2" src="../assets/images/users/female/9.jpg" alt="img"></a>
+										<h5 class="mt-2 mb-0"><a class="hover-primary" href="#">Sue	Martin</a></h5><span>Mean Stack Developer</span>
+										<div class="mt-20">
+											<span class="badge badge-default">PHP</span> <span class="badge badge-default">HTML</span> <span class="badge badge-default">CSS</span> <span class="badge badge-default">jQuery</span>
+										</div>
+									</div>
+									<footer class="card-footer flexbox bg-primary text-white">
+										<div class="location">
+											<i class="fa fa-map-marker-alt pr-1"></i> <span>Stockbridge, GA</span>
+										</div>
+										<div class="price">
+											<i class="fa fa-money pr-1"></i> <span>$35 / hour</span>
+										</div>
+									</footer>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<div class="card">
+									<div class="flexbox align-items-center px-20 pt-20">
+										<div class="dropdown">
+											<a aria-expanded="false" data-toggle="dropdown" href="#"><i class="fas fa-ellipsis-h rotate-90 text-muted"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Profile</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-comments"></i> Messages</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-phone"></i> Call</a>
+												<div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-fw fa-download"></i> Download Resume</a>
+											</div>
+										</div>
+									</div>
+									<div class="card-body text-center pt-1 pb-20">
+										<a href="#"><img class="avatar avatar-xxl rounded-circle mb-2" src="../assets/images/users/male/26.jpg" alt="img"></a>
+										<h5 class="mt-2 mb-0"><a class="hover-primary" href="#">Ryan Powell</a></h5><span>Web Developer</span>
+										<div class="mt-20">
+											<span class="badge badge-default">PHP</span> <span class="badge badge-default">HTML</span> <span class="badge badge-default">CSS</span> <span class="badge badge-default">jQuery</span>
+										</div>
+									</div>
+									<footer class="card-footer flexbox bg-danger text-white">
+										<div class="location">
+											<i class="fa fa-map-marker-alt pr-1"></i> <span>Stockbridge, GA</span>
+										</div>
+										<div class="price">
+											<i class="fa fa-money pr-1"></i> <span>$35 / hour</span>
+										</div>
+									</footer>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<div class="card bg-success text-white">
+									<div class="flexbox align-items-center px-20 pt-20">
+										<div class="dropdown">
+											<a aria-expanded="false" data-toggle="dropdown" href="#"><i class="fas fa-ellipsis-h rotate-90 text-muted"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#"><i class="fa fa-fw fa-user"></i> Profile</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-comments"></i> Messages</a> <a class="dropdown-item" href="#"><i class="fa fa-fw fa-phone"></i> Call</a>
+												<div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-fw fa-download"></i> Download Resume</a>
+											</div>
+										</div>
+									</div>
+									<div class="card-body text-center pt-1 pb-20">
+										<a href="#"><img class="avatar avatar-xxl rounded-circle mb-2" src="../assets/images/users/male/7.jpg" alt="img"></a>
+										<h5 class="mt-2 mb-0"><a class="hover-primary" href="#">Jonathan Fraser</a></h5><span>App Developer</span>
+										<div class="mt-20">
+											<span class="badge bg-gradient-primary">PHP</span> <span class="badge bg-gradient-dark">HTML</span> <span class="badge bg-gradient-danger">CSS</span> <span class="badge bg-gradient-teal">jQuery</span>
+										</div>
+									</div>
+									<footer class="card-footer flexbox bg-dark border-top-0">
+										<div class="location">
+											<i class="fa fa-map-marker-alt pr-1"></i> <span>Stockbridge, GA</span>
+										</div>
+										<div class="price">
+											<i class="fa fa-money pr-1"></i> <span>$35 / hour</span>
+										</div>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<!-- Boxes de Acoes -->
+							<div class="col-xl-4 col-lg-4 col-md-12">
+								<div class="box">
+									<div class="icon">
+										<div class="image bg-primary">
+											<i class="fas fa-file-archive"></i>
+										</div>
+										<div class="info card pb-6">
+											<h3 class="title mb-0">Made with Bootstrap 4</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</p><a class="btn btn-primary text-white center-block" href="#" title="Title Link">Read More <i class="fa fa-angle-double-right"></i></a>
+										</div>
+									</div>
+									<div class="space"></div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12">
+								<div class="box">
+									<div class="icon">
+										<div class="image bg-primary">
+											<i class="fas fa-font"></i>
+										</div>
+										<div class="info card pb-6">
+											<h3 class="title mb-0">Icons by Font Awesome 5</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</p><a class="btn btn-primary text-white center-block" href="#" title="Title Link">Read More <i class="fa fa-angle-double-right"></i></a>
+										</div>
+									</div>
+									<div class="space"></div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12">
+								<div class="box">
+									<div class="icon">
+										<div class="image bg-primary">
+											<i class="fas  fa-phone"></i>
+										</div>
+										<div class="info card pb-6">
+											<h3 class="title mb-0">Mobile Friendly</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</p><a class="btn btn-primary text-white center-block" href="#" title="Title Link">Read More <i class="fa fa-angle-double-right"></i></a>
+										</div>
+									</div>
+									<div class="space"></div>
+								</div>
+							</div><!-- /Boxes de Acoes -->
+						</div>
+
+						<div class="row">
+                            <div class="col-xl-4 col-md-12">
+                                <div class="our-services-wrapper card">
+                                    <div class="services-inner">
+                                        <div class="our-services-img">
+                                            <div class="icon icon-shape bg-primary rounded-circle text-white">
+                                            	<i class="fas fa-server text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our-services-text">
+                                            <h4>Project growth</h4>
+                                            <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12">
+                                <div class="our-services-wrapper card">
+                                    <div class="services-inner">
+                                        <div class="our-services-img">
+                                        	<div class="icon icon-shape bg-success rounded-circle text-white">
+                                            	<i class="fas fa-server text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our-services-text">
+                                            <h4>project growth</h4>
+                                            <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12">
+                                <div class="our-services-wrapper card">
+                                    <div class="services-inner c">
+                                        <div class="our-services-img">
+                                        	<div class="icon icon-shape bg-warning rounded-circle text-white">
+                                            	<i class="fas fa-server text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div class="our-services-text">
+                                            <h4>project growth</h4>
+                                            <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="hero-widget card">
+									<i class="fas fa-share-alt  fa-3x mb-4 text-primary"></i>
+									<div class="text">
+										<var>7</var>
+										<label class="text-muted">guests</label>
+									</div>
+									<div class="options">
+										<a href="javascript:;" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add a guest</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="hero-widget card">
+									<i class="fas fa-thumbs-up  fa-3x mb-4 text-primary"></i>
+									<div class="text">
+										<var>512</var>
+										<label class="text-muted">page likes</label>
+									</div>
+									<div class="options">
+										<a href="javascript:;" class="btn btn-primary btn-sm"><i class="fas fa-search"></i> View Likes</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="hero-widget card">
+									<i class="fas fa-calendar-check  fa-3x mb-4 text-primary"></i>
+									<div class="text">
+										<var>34</var>
+										<label class="text-muted">total views</label>
+									</div>
+									<div class="options">
+										<a href="javascript:;" class="btn btn-primary btn-sm"><i class="fas fa-search"></i> See Views</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="hero-widget card">
+									<i class="fas fa-cog text-primary fa-3x mb-4"></i>
+									<div class="text">
+										<var>56%</var>
+										<label class="text-muted">profile bio-data</label>
+									</div>
+									<div class="options">
+										<a href="javascript:;" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit Bio-data</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card p-3 px-4">
+									<div>Total Profits</div>
+									<div class="py-4 m-0 text-center h1 text-dark">$10,234</div>
+									<div class="d-flex">
+										<small class="text-muted">Profits</small>
+										<div class="ml-auto"><i class="fas fa-caret-up text-success"></i> 6%</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card p-3 px-4">
+									<div>Project Orders</div>
+									<div class="py-4 m-0 text-center h1 text-dark">538</div>
+									<div class="d-flex">
+										<small class="text-muted">New order</small>
+										<div class="ml-auto">
+										<i class="fas fa-caret-down text-danger"></i> 32%</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card p-3 px-4">
+									<div>Project status</div>
+									<div class="py-4 m-0 text-center h1 text-dark">$2,890</div>
+									<div class="d-flex">
+										<small class="text-muted">Status</small>
+										<div class="ml-auto"><i class="fas fa-caret-down text-success"></i> 0.5%</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card p-3 px-4">
+									<div>Price</div>
+									<div class="py-4 m-0 text-center h1 text-dark">565</div>
+									<div class="d-flex">
+										<small class="text-muted">Price</small>
+										<div class="ml-auto">
+										<i class="fas fa-caret-up text-danger"></i> 3%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="d-flex justify-content-between">
+											<h4 class="card-title">Active Projects</h4>
+											<i class="mdi mdi-dots-vertical"></i>
+										</div>
+										<p class="card-description">What're people doing right now</p>
+										<div class="list d-flex align-items-center border-bottom py-3">
+											<div class="avatar brround d-block cover-image" data-image-src="../assets/images/users/female/17.jpg">
+												<span class="avatar-status bg-green"></span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0">
+												<b>Lilly </b>posted in Website</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<p class="mb-0">Awesome websites!</p>
+													</div>
+													<small class="text-muted ml-auto">2 hours ago</small>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom py-3">
+											<div class="avatar brround d-block cover-image" data-image-src="../assets/images/users/male/6.jpg">
+												<span class="avatar-status bg-green"></span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0">
+												<b>Thomos</b>posted in Material</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<p class="mb-0">Awesome websites!</p>
+													</div>
+													<small class="text-muted ml-auto">3 hours ago</small>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom py-3">
+											<div class="avatar brround d-block cover-image" data-image-src="../assets/images/users/female/14.jpg">
+												<span class="avatar-status bg-green"></span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0">
+												<b>Marry cott </b>posted in photo</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<p class="mb-0">That's Great!</p>
+													</div>
+													<small class="text-muted ml-auto">1 hours ago</small>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center pt-3">
+											<div class="avatar brround d-block cover-image" data-image-src="../assets/images/users/male/26.jpg">
+												<span class="avatar-status bg-green"></span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0">
+												<b>John </b>posted in Status</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<p class="mb-0">Awesome websites!</p>
+													</div>
+													<small class="text-muted ml-auto">1 hours ago</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Busines Team</h3>
+									</div>
+									<div class="card-body">
+										<div>
+											<div class="chips">
+												<div class="team">
+													<a href="javascript:void(0)" class="chip">
+														<span class="avatar cover-image" data-image-src="../assets/images/users/female/16.jpg"></span> Victoria
+													</a>
+													<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+													<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+													<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+													<p>On the other hand, we denounce with right indignation and dislike imagesralized</p>
+												</div>
+												<div class="team">
+													<a href="javascript:void(0)" class="chip">
+														<span class="avatar cover-image" data-image-src="../assets/images/users/male/41.jpg"></span> Nathan
+													</a>
+													<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+													<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+													<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+													<p>On the other hand, we denounce with right indignation and dislike imagesralized</p>
+												</div>
+												<div class="team">
+													<a href="javascript:void(0)" class="chip">
+														<span class="avatar cover-image" data-image-src="../assets/images/users/female/1.jpg"></span> Alice
+													</a>
+													<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
+													<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
+													<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
+													<p>On the other hand, we denounce with right indignation and dislike imagesralized</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Top Countries</h3>
+									</div>
+									<div class="card-body">
+										<table class="table card-table ">
+											<tbody>
+												<tr>
+													<td class="w-1"><i class="flag flag-us mt-2"></i></td>
+													<td>USA
+														<div class="progress progress-xs mt-1">
+															<div class="progress-bar w-80"></div>
+														</div>
+													</td>
+													<td class="w-1 text-right"><span class="text-muted">$5235</span></td>
+												</tr>
+												<tr>
+													<td><i class="flag flag-pl mt-2"></i></td>
+													<td>Poland
+														<div class="progress progress-xs mt-2">
+															<div class="progress-bar w-60"></div>
+														</div>
+													</td>
+													<td class="text-right"><span class="text-muted">$3214</span></td>
+												</tr>
+												<tr>
+													<td><i class="flag flag-de mt-2"></i></td>
+													<td>Germany
+														<div class="progress progress-xs mt-2">
+															<div class="progress-bar w-50"></div>
+														</div>
+													</td>
+													<td class="text-right"><span class="text-muted">$4123</span></td>
+												</tr>
+												<tr>
+													<td><i class="flag flag-ru mt-2"></i></td>
+													<td>Russia
+														<div class="progress progress-xs mt-2">
+															<div class="progress-bar w-35"></div>
+														</div>
+													</td>
+													<td class="text-right"><span class="text-muted">$1543</span></td>
+												</tr>
+												<tr>
+													<td><i class="flag flag-in mt-2"></i></td>
+													<td>India
+														<div class="progress progress-xs mt-2">
+															<div class="progress-bar w-35"></div>
+														</div>
+													</td>
+													<td class="text-right"><span class="text-muted ">$1543</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-8 col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Add  projects And Upload</h3>
+									</div>
+									<div class="table-responsive">
+										<table class="table card-table table-vcenter text-nowrap">
+											<thead>
+												<tr>
+													<th>Project Name</th>
+													<th>Date</th>
+													<th>Status</th>
+													<th>Price</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td><a href="store.html" class="text-inherit">Untrammelled prevents </a></td>
+													<td>28 May 2018</td>
+													<td><span class="status-icon bg-success"></span> Completed</td>
+													<td>$56,908</td>
+													<td class="text-right">
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-green btn-sm"><i class="fas fa-link"></i> Update</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i> Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="store.html" class="text-inherit">Untrammelled prevents</a></td>
+													<td>12 June 2018</td>
+													<td><span class="status-icon bg-danger"></span> On going</td>
+													<td>$45,087</td>
+													<td class="text-right">
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-green btn-sm"><i class="fas fa-link"></i> Update</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i> Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="store.html" class="text-inherit">Untrammelled prevents</a></td>
+													<td>12 July 2018</td>
+													<td><span class="status-icon bg-warning"></span> Pending</td>
+													<td>$60,123</td>
+													<td class="text-right">
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-green btn-sm"><i class="fas fa-link"></i> Update</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i> Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="store.html" class="text-inherit">Untrammelled prevents</a></td>
+													<td>14 June 2018</td>
+													<td><span class="status-icon bg-warning"></span> Pending</td>
+													<td>$70,435</td>
+													<td class="text-right">
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-green btn-sm"><i class="fas fa-link"></i> Update</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i> Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td><a href="store.html" class="text-inherit">Untrammelled prevents</a></td>
+													<td>25 June 2018</td>
+													<td><span class="status-icon bg-success"></span> Completed</td>
+													<td>$15,987</td>
+													<td class="text-right">
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-green btn-sm"><i class="fas fa-link"></i> Update</a>
+
+														<a class="icon" href="javascript:void(0)"></a>
+														<a href="javascript:void(0)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i> Delete</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12">
+								<div class="card card-aside">
+									<div class="card-aside-column cover-image" data-image-src="../assets/images/photos/9.jpg"></div>
+									<div class="card-body">
+										<h4 class="card-title mb-4">Card with Rightside</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</div>
+								<div class="card card-aside">
+									<div class="card-body">
+										<h4 class="card-title mb-4">Card with Leftside</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut labore et dolore magna aliqua.  </p>
+									</div>
+									<div class="card-aside-column cover-image" data-image-src="../assets/images/photos/10.jpg"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-xl-8">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Photos</h3>
+									</div>
+									<div class="card-body">
+										<div>
+											<div class="row img-gallery">
+												<div class="col-6">
+													<a href="javascript:void(0)" class="d-block link-overlay">
+														<img class="d-block img-fluid rounded" src="../assets/images/photos/4.jpg" alt="">
+														<span class="link-overlay-bg rounded">
+															<i class="fas fa-search"></i>
+														</span>
+													</a>
+												</div>
+												<div class="col-6">
+													<a href="javascript:void(0)" class="d-block link-overlay">
+														<img class="d-block img-fluid rounded" src="../assets/images/photos/5.jpg" alt="">
+														<span class="link-overlay-bg rounded">
+															<i class="fas fa-search"></i>
+														</span>
+													</a>
+												</div>
+												<div class="col-6">
+													<a href="javascript:void(0)" class="d-block link-overlay">
+														<img class="d-block img-fluid rounded" src="../assets/images/photos/6.jpg" alt="">
+														<span class="link-overlay-bg rounded">
+															<i class="fas fa-search"></i>
+														</span>
+													</a>
+												</div>
+												<div class="col-6">
+													<a href="javascript:void(0)" class="d-block link-overlay">
+														<img class="d-block img-fluid rounded" src="../assets/images/photos/7.jpg" alt="">
+														<span class="link-overlay-bg rounded">
+															<i class="fas fa-search"></i>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-xl-4">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Followers</h4>
+									</div>
+									<div class="table-responsive">
+										<table class="table card-table mt-2 mb-2 text-nowrap">
+											<tr>
+												<td class="align-middle w-1" >
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/male/42.jpg"></span>
+												</td>
+												<td>
+													<strong>Hugo Slavia</strong>
+													<small class="d-block text-muted">@fat</small>
+												</td>
+												<td class="align-middle w-1" >
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1">
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/male/2.jpg"></span>
+												</td>
+												<td>
+													<strong>Cara Larm</strong>
+													<small class="d-block text-muted">@dhg</small>
+												</td>
+												<td class="align-middle w-1">
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1" >
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/female/24.jpg"></span>
+												</td>
+												<td>
+													<strong>Cooke Edoh</strong>
+													<small class="d-block text-muted">@mdo</small>
+												</td>
+												<td class="align-middle w-1" >
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1" >
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/male/23.jpg"></span>
+												</td>
+												<td>
+													<strong>Gio Metric</strong>
+													<small class="d-block text-muted">@mdo</small>
+												</td>
+												<td class="align-middle w-1" >
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1">
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/male/42.jpg"></span>
+												</td>
+												<td>
+													<strong>Vinny Gret</strong>
+													<small class="d-block text-muted">@cwt</small>
+												</td>
+												<td class="align-middle w-1">
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1">
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/female/7.jpg"></span>
+												</td>
+												<td>
+													<strong>Stewart	King</strong>
+													<small class="d-block text-muted">@cwt</small>
+												</td>
+												<td class="align-middle w-1">
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="align-middle w-1">
+													<span class="avatar brround avatar-md cover-image" data-image-src="../assets/images/users/female/31.jpg"></span>
+												</td>
+												<td>
+													<strong>Claire	Kerr</strong>
+													<small class="d-block text-muted">@cwt</small>
+												</td>
+												<td class="align-middle w-1">
+													<button class="btn btn-outline-primary btn-sm">
+														<span class="fab fa-twitter"></span> Follow
+													</button>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-4 col-md-12">
+								<div class="card card-primary text-center">
+									<div class="card-body">
+										<img class="img-responsive img-effect" src="../assets/images/products/product1.jpg" alt="img">
+									</div>
+									<div class="card-footer">
+										<span class="label label-success float-left mb-0">Smart Phone</span>
+										<span class="float-right">
+											<a href="#" class="btn btn-primary btn-xs tip" title="Favorite">
+												<i class="fas fa-heart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Buy">
+											   <i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Share">
+											   <i class="fas fa-share-square"></i>
+											</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12">
+								<div class="card card-success">
+									<div class="card-body text-center">
+										<img class="img-responsive img-effect" src="../assets/images/products/product2.jpg" alt="img">
+									</div>
+									<div class="card-footer">
+										<span class="label label-success float-left mb-0">Glod Watch</span>
+										<span class="float-right">
+											<a href="#" class="btn btn-primary btn-xs tip" title="Favorite">
+												<i class="fas fa-heart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Buy">
+											   <i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Share">
+											   <i class="fas fa-share-square"></i>
+											</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12">
+								<div class="card card-danger">
+									<div class="card-body text-center">
+										<img class="img-responsive img-effect" src="../assets/images/products/product3.jpg" alt="img">
+									</div>
+									<div class="card-footer">
+										<span class="label label-danger float-left mb-0">Samsung Tv</span>
+										<span class="float-right">
+											<a href="#" class="btn btn-primary btn-xs tip" title="Favorite">
+												<i class="fas fa-heart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Buy">
+											   <i class="fas fa-shopping-cart"></i>
+											</a>
+											<a href="#" class="btn btn-primary btn-xs tip" title="Share">
+											   <i class="fas fa-share-square"></i>
+											</a>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Sidebar-right-->
+					<div class="sidebar sidebar-right sidebar-animate">
+						<div class="panel panel-primary">
+							<div class="tab-menu-heading border-0">
+								<div class="tabs-menu ">
+									<!-- Tabs -->
+									<ul class="nav panel-tabs">
+										<li class=""><a href="#side1" class="active" data-toggle="tab"><i class="fas fa-comments"></i> Chat</a></li>
+										<li><a href="#side2" data-toggle="tab"><i class="fas fa-bell"></i> Notifications</a></li>
+										<li><a href="#side3" data-toggle="tab"><i class="fas fa-user-friends"></i> Friends</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="panel-body tabs-menu-body p-0 border-0">
+								<div class="tab-content">
+									<div class="tab-pane active " id="side1">
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-primary brround avatar-md">CH</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>New Websites is Created</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">30 mins ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-danger brround avatar-md">N</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Prepare For the Next Project</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">2 hours ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-info brround avatar-md">S</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Decide the live Discussion</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">3 hours ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-warning brround avatar-md">K</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Meeting at 3:00 pm</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">4 hours ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-success brround avatar-md">R</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Prepare for Presentation</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">1 days ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-pink brround avatar-md">MS</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Prepare for Presentation</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">1 days ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center border-bottom p-4">
+											<div class="">
+												<span class="avatar bg-purple brround avatar-md">L</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Prepare for Presentation</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">45 mintues ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list d-flex align-items-center p-4">
+											<div class="">
+												<span class="avatar bg-blue brround avatar-md">U</span>
+											</div>
+											<div class="wrapper w-100 ml-3">
+												<p class="mb-0 d-flex">
+													<b>Prepare for Presentation</b>
+												</p>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<i class="mdi mdi-clock text-muted mr-1"></i>
+														<small class="text-muted ml-auto">2 days ago</small>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane  " id="side2">
+										<div class="list-group list-group-flush ">
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/12.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Madeleine</strong> Hey! there I' am available....
+													<div class="small text-muted">
+														3 hours ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/male/21.jpg"></span>
+												</div>
+												<div>
+													<strong>Anthony</strong> New product Launching...
+													<div class="small text-muted">
+														5 hour ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/29.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Olivia</strong> New Schedule Realease......
+													<div class="small text-muted">
+														45 mintues ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/21.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Madeleine</strong> Hey! there I' am available....
+													<div class="small text-muted">
+														3 hours ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/male/11.jpg"></span>
+												</div>
+												<div>
+													<strong>Anthony</strong> New product Launching...
+													<div class="small text-muted">
+														5 hour ago
+													</div>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-3">
+													<span class="avatar avatar-lg brround cover-image" data-image-src="../assets/images/users/female/19.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div>
+													<strong>Olivia</strong> New Schedule Realease......
+													<div class="small text-muted">
+														45 mintues ago
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane  " id="side3">
+										<div class="list-group list-group-flush ">
+											<form class="form-inline p-4">
+												<div class="search-element">
+													<input class="form-control header-search" type="search" placeholder="Search..." aria-label="Search">
+												</div>
+											</form>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/12.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Mozelle Belt</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/21.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Florinda Carasco</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/29.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Alina Bernier</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/2.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Zula Mclaughin</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/34.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Isidro Heide</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/12.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Mozelle Belt</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/21.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Florinda Carasco</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/29.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Alina Bernier</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/2.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Zula Mclaughin</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/14.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Isidro Heide</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/11.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Florinda Carasco</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/9.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Alina Bernier</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/male/22.jpg"><span class="avatar-status bg-green"></span></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Zula Mclaughin</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+											<div class="list-group-item d-flex  align-items-center">
+												<div class="mr-2">
+													<span class="avatar avatar-md brround cover-image" data-image-src="../assets/images/users/female/4.jpg"></span>
+												</div>
+												<div class="">
+													<div class="font-weight-semibold">Isidro Heide</div>
+												</div>
+												<div class="ml-auto">
+													<a href="#" class="btn btn-sm btn-light"><i class="fab fa-facebook-messenger"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/Sidebar-right-->
+
+					<!--footer-->
+					<footer class="footer">
+						<div class="container">
+							<div class="row align-items-center flex-row-reverse text-white-50">
+								<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+									Copyright © 2019 <a href="#">Getren</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+								</div>
+							</div>
+						</div>
+					</footer>
+					<!-- End Footer-->
+				</div>
+			</div>
+		</div>
+		<a href="#top" id="back-to-top"><i class="fas fa-angle-up "></i></a>
+
+		<!-- Dashboard js -->
+		<script src="../assets/js/vendors/jquery-3.2.1.min.js"></script>
+		<script src="../assets/js/vendors/jquery.sparkline.min.js"></script>
+		<script src="../assets/js/vendors/selectize.min.js"></script>
+		<script src="../assets/js/vendors/jquery.tablesorter.min.js"></script>
+		<script src="../assets/js/vendors/circle-progress.min.js"></script>
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Bootstrap.min js-->
+		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Side menu js -->
+		<script src="../assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- peitychart -->
+		<script src="../assets/plugins/peitychart/jquery.peity.min.js"></script>
+
+		<!-- Input Mask Plugin -->
+		<script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
+
+		<!-- Chart js -->
+		<script src="../assets/plugins/chart/chart.bundle.js"></script>
+		<script src="../assets/plugins/chart/utils.js"></script>
+
+		<!-- ApexChart -->
+		<script src="../assets/js/apexcharts.js"></script>
+
+		<!--Counters -->
+		<script src="../assets/plugins/counters/counterup.min.js"></script>
+		<script src="../assets/plugins/counters/waypoints.min.js"></script>
+
+        <!-- Scripts -->
+		<script src="../assets/js/index2.js"></script>
+		<script src="../assets/js/index3.js"></script>
+
+		<!-- Sidebar js -->
+		<script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- Custom js -->
+		<script src="../assets/js/custom.js"></script>
+	</body>
+</html>

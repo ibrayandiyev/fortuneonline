@@ -1,0 +1,7 @@
+userid 		-> telefono
+userlevel	-> Estado de Usuario	1,0
+timestamp	-> Compra Dolar
+previous_visit	-> Venta Dolar
+regdate		-> Usu Preferencial 	1,0
+actkey		-> Celular 1
+user_home_path	-> Celular 2

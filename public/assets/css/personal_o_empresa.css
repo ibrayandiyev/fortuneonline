@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    	font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: #2c2c2c;
+      position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/personal_o_empresa/registro.jpg') center center no-repeat;
+    background-size: cover;
+
+  }
+
+  .logo {
+    width: 150px;
+   margin-bottom:20px;
+  }
+
+  .ml-auto, .mx-auto {
+      margin-left: auto!important;
+  }
+
+  .mr-auto, .mx-auto {
+      margin-right: auto!important;
+  }
+  .mb-4, .my-4 {
+      margin-bottom: 1.5rem!important;
+  }
+  @media (min-width: 992px)
+  .col-lg-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+  }
+  .col-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+
+  }
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+
+
+
+  body a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .header {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .header__title {
+    margin-bottom: 30px;
+    font-size: 2.1rem;
+  }
+
+  .content {
+    width: 95%;
+    margin: 0 auto 50px;
+  }
+
+  .content__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .content__title--m-sm {
+    margin-bottom: 10px;
+  }
+
+  .multisteps-form__progress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+
+  .txtazul {
+
+    font-size: 1.9em;
+    font-weight: 600;
+    color: #005A87;
+    line-height : 15px;
+  }
+
+  .txtnaranja {
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #F99030;
+  }
+
+
+  .multisteps-form__progress-btn {
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    position: relative;
+    padding-top: 20px;
+    text-indent: -9999px;
+    border: none;
+    background-color: transparent;
+    outline: none !important;
+    cursor: pointer;
+  }
+  @media (min-width: 500px) {
+    .multisteps-form__progress-btn {
+      text-indent: 0;
+    }
+  }
+  .multisteps-form__progress-btn:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    transition: all 0.15s linear 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  .multisteps-form__progress-btn:after {
+    position: absolute;
+    top: 5px;
+    left: calc(-50% - 13px / 2);
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: currentColor;
+    z-index: 1;
+  }
+  .multisteps-form__progress-btn:first-child:after {
+    display: none;
+  }
+  .multisteps-form__progress-btn.js-active {
+    color: #007bff;
+  }
+  .multisteps-form__progress-btn.js-active:before {
+    -webkit-transform: translateX(-50%) scale(1.2);
+            transform: translateX(-50%) scale(1.2);
+    background-color: currentColor;
+  }
+
+  .multisteps-form__form {
+    position: relative;
+  }
+
+  .multisteps-form__panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .multisteps-form__panel.js-active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .multisteps-form__panel[data-animation="scaleOut"] {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .multisteps-form__panel[data-animation="scaleOut"].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .multisteps-form__panel[data-animation="slideHorz"] {
+    left: 50px;
+  }
+  .multisteps-form__panel[data-animation="slideHorz"].js-active {
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    transition-delay: 0s;
+    left: 0;
+  }
+  .multisteps-form__panel[data-animation="slideVert"] {
+    top: 30px;
+  }
+  .multisteps-form__panel[data-animation="slideVert"].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    top: 0;
+  }
+  .multisteps-form__panel[data-animation="fadeIn"].js-active {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+  .multisteps-form__panel[data-animation="scaleIn"] {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .multisteps-form__panel[data-animation="scaleIn"].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
